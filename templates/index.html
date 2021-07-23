@@ -16,8 +16,8 @@
 	<h1>Cluster Documents</h1>
 
     <form name="inputform" action="{{ url_for('predict')}}" method="POST" enctype="multipart/form-data">
-        <input type="file" name="json_file" accept=".json"/> <br>
-        <input type="text" name="file_content" placeholder="Enter contents of the file"/>
+        <br> <input type="file" name="json_file" accept=".json"/> <br>
+        <br> <input type="text" name="file_content" placeholder="Enter contents of the file"/> <br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large" onclick=validateAndSend() > Predict </button>
 
@@ -37,7 +37,8 @@
     </script>
 
  </div>
-    {{prediction}}
+    <br> {{prediction}} <br>
+    <br> {{words}} <br>
 
 </body>
 </html>
